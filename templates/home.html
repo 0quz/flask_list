@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %} oguzabdullahcakir {% endblock %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+
+<div class="d-flex justify-content-center" style="background-color: black; padding: 50px;">
+<form class="form" action="http://127.0.0.1:5000/list" method="get">
+    <input class="form-style" type="search" placeholder="Başlangıç Tarihi" aria-label="Search" name="s">
+    <input class="form-style" type="search" placeholder="Bitiş Tarihi" aria-label="Search" name="f">
+    <button class="btn btn-outline-primary btn-light" type="submit">Listele</button>
+    <p class="d-flex justify-content-center" style="background-color: white; margin-top: 5px;">Örnek Tarih : 2017-08-09</p>
+</form>
+</div>
+
+{% endblock %}
